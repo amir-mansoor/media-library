@@ -1,0 +1,35 @@
+.flex {
+	display: flex;
+}
+
+.card {
+	margin: 5px;
+}
+
+.details-btn {
+	background: rgba(0,0,0,0.4);
+	color: white;
+	text-align: center;
+	width: 40%;
+	margin: auto;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.details-btn:hover {
+	text-decoration: none;
+	color: white;
+	opacity: 0.7;
+	box-shadow: 1px 2px 0px 0px black;
+}
+
+.right_side {
+	width: 30%;
+	position: fixed;
+	top: 13%;
+	right: 16%;
+}
+
+strong {
+	color: gray;
+}
