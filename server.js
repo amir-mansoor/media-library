@@ -6,14 +6,17 @@ const booksRoute = require("./routes/booksRoute.js")
 const musicRoute = require("./routes/musicsRoute.js")
 const connection = require("./config/db.js")
 const {notFound} = require("./middleware/errorMiddleware.js")
+
 dotenv.config()
 connection()
 
 app.use(express.json())
 // Home route
 app.get("/", (req, res) => {
-	res.send("Your Api is running")
+	res.status(200)
+	res.send("Your Api is running😂️")
 })
+
 
 app.use('/api/books', booksRoute)
 app.use('/api/musics', musicRoute)

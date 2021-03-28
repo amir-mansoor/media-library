@@ -1,9 +1,9 @@
 const mongoose = require("mongoose")
 const connection = require("./config/db.js")
 const Books = require("./model/BookModel.js")
-const books = require("../media_library/frontend/src/books.js")
+const books = require("./dummydata/books.js")
 const Music = require("./model/MusicModel.js")
-const music = require("../media_library/frontend/src/music.js")
+const music = require("./dummydata/music.js")
 connection()
 
 const importData = async () => {

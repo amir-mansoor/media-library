@@ -11,7 +11,7 @@ const getBooksById = async (req, res) => {
 		res.json(book)		
 	} else {
 		res.status(404)
-		res.json({error: "Book is not found"})
+		throw new Error("Book is not found")
 	}
 	
 }

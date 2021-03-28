@@ -8,13 +8,9 @@ const Header = () => {
   <Link className="logo" to="/">Media Library</Link>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
+    <Nav className="ml-auto">
+    <Link className="logo m-2 ml-4" to="/cart">Basket</Link>
       <Link className="logo m-2 ml-4" to="/login">Log In</Link>
-      <NavDropdown title="See Here" id="basic-nav-dropdown">
-        <NavDropdown.Item><Link to="/books">Books</Link></NavDropdown.Item>
-         <NavDropdown.Item><Link to="/music">Music</Link></NavDropdown.Item>
-
-      </NavDropdown>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />

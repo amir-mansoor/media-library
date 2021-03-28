@@ -2,14 +2,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import {bookListReducer, bookDetailReducer} from "./reducers/bookReducers.js"
-import musicListReducer from "./reducers/musicReducers.js"
-import musicDetail from "./reducers/musicDetail.js"
+import cartReducer from "./reducers/cartReducers.js"
 
 const reducers = combineReducers({
 	bookList: bookListReducer,
-	musicList: musicListReducer,
 	bookDetail: bookDetailReducer,
-	musicDetail
+	cart: cartReducer
 })
 
 const initialState = {

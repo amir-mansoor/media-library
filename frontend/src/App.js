@@ -5,7 +5,7 @@ import Home from "./components/Home.js"
 import {Route, Switch} from "react-router-dom"
 import Error from "./components/Error.js"
 import ProductDetail from "./components/ProductDetail.js"
-import MusicDetails from "./components/MusicDetails.js"
+import CartScreen from "./screens/CartScreen.js"
 const App = () => {
 	return (
 		<>
@@ -13,7 +13,7 @@ const App = () => {
 		<Switch>
 			<Route path="/" exact component={Home}/>
 			<Route path="/bookdetails/:id" component={ProductDetail}/>
-			<Route path="/musicdetails/:id" component={MusicDetails}/>
+			<Route path="/cart/:id" component={CartScreen} />
 			<Route exact component={Error}/>
 		</Switch>
 		</>

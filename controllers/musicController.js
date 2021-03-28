@@ -11,7 +11,7 @@ const getMusicById = async (req, res) => {
 		res.json(music)		
 	} else {
 		res.status(404)
-		res.json({error: "Music is not found"})
+		throw new Error("Music is not found")
 	}
 	
 }
