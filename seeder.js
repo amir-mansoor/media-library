@@ -2,16 +2,13 @@ const mongoose = require("mongoose")
 const connection = require("./config/db.js")
 const Books = require("./model/BookModel.js")
 const books = require("./dummydata/books.js")
-const Music = require("./model/MusicModel.js")
-const music = require("./dummydata/music.js")
+
 connection()
 
 const importData = async () => {
 	try {
 		await Books.deleteMany()
 		await Books.insertMany(books)
-		await Music.deleteMany()
-		await Music.insertMany(music)
 		console.log("Data is imported Successfully")
 		process.exit()
 	} catch (error) {
@@ -23,7 +20,6 @@ const importData = async () => {
 const destroyData = async () => {
 	try {
 		await Books.deleteMany()
-		await Music.deleteMany()
 		console.log("data is destroy successfuly")
 		process.exit()
 	} catch (error) {

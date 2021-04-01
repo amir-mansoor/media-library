@@ -31,9 +31,9 @@ const ProductDetail = ({match, history}) => {
 
 		<Container className="mt-4">
 			<Col md={5}>
-				<Image width={400} height={400} src={productDetail.image} alt={productDetail.name} />
+				<Image className="mask" width={400} height={400} src={productDetail.image} alt={productDetail.name} />
 			</Col>
-			<div className="right_side border p-2">
+			<div className="mt-4 border p-1">
 			<Col>
 				<strong>Product Name:</strong>
 				<p>{productDetail.name}</p>
